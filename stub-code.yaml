@@ -1,0 +1,77 @@
+-
+      description: Authentication[inquiry-user-salt]
+      request:
+            method: POST
+            url: /authentication/inquiry-user-salt
+      response:
+            status: 200
+            headers:
+                  content-type: application/json
+            file: /response-data/inquiry-user-salt.json
+-
+      description: Authentication[verify-credential]
+      request:
+            method: POST
+            url: /authentication/verify-credential
+      response:
+            status: 200
+            headers:
+                  content-type: application/json
+            file: /response-data/verify-credential.json
+-
+      description: Deposit[validate-transaction]
+      request:
+            method: POST
+            url: /deposit/validate-transaction
+      response:
+            status: 200
+            headers:
+                  content-type: application/json
+            file: /response-data/validate-transaction.json
+-
+      description: Deposit[process-transaction]
+      request:
+            method: POST
+            url: /deposit/process-transaction
+      response:
+            -
+                  status: 200
+                  headers:
+                        content-type: application/json
+                  file: /response-data/process-transaction.json
+            -
+                  status: 400
+                  headers:
+                        content-type: application/json
+                  file: /response-data/error-process-transaction.json
+-
+      description: Search Customer[inquiry-customer-details]
+      request:
+            method: POST
+            url: /customer/inquiry-customer-details
+      response:
+            status: 200
+            headers:
+                  content-type: application/json
+            file: /response-data/inquiry-customer-details.json
+
+-
+      description: Authentication[Logout]
+      request:
+            method: POST
+            url: /authentication/verify-logoff
+      response:
+            status: 200
+            headers:
+                  content-type: application/json
+            file: /response-data/verify-logoff.json
+-
+      description: SMS
+      request:
+            method: POST
+            url: /ESBUtilsService
+      response:
+            status: 200
+            headers:
+                  content-type: application/xml
+            body: <?xml version=\"1.0\" encoding=\"utf-8\"?><soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\"><soapenv:Body><out:SendSMSRs xmlns:out=\"http://www.gsb.or.th/ESBUtilsService\"><RsHeader><RqUID>HH1712190000129</RqUID><TranCode>HHS00002</TranCode><AppId>DTAC</AppId><TranDate>20171219</TranDate><TranTime>123322</TranTime><Status><StatusCode>0</StatusCode><ErrorCode>0</ErrorCode></Status></RsHeader><SMID>17121939123157199341</SMID><SendStatus>0</SendStatus><Detail>Success</Detail></out:SendSMSRs></soapenv:Body></soapenv:Envelope>

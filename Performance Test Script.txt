@@ -1,0 +1,40 @@
+Performance Test Script
+
+1 Login
+3 Refresh Token
+10 min usage
+10 Process Deposit
+10 Validate Deposit Error
+10 Get Market Stall
+2 Transaction History
+3 Search Customer
+
+
+10 Min per session 
+0:00 - Login
+        - Make Transaction x 3
+ -Get Market Stall
+ - Validate Deposit with error
+ - Validate Deposit
+ - Process Deposit
+2:00 - RefreshToken 
+        - Make Transaction x 3
+ -Get Market Stall
+ - Validate Deposit with error
+ - Validate Deposit
+ - Process Deposit
+4:00 - RefreshToken
+        - Make Transaction x 3
+ -Get Market Stall
+ - Validate Deposit with error
+ - Validate Deposit
+ - Process Deposit
+6:00 - RefreshToken
+        - Make Transaction x 1
+ -Get Market Stall
+ - Validate Deposit with error
+ - Validate Deposit
+ - Process Deposit
+8:00 - Transaction History
+- Search Customer
+- Log out

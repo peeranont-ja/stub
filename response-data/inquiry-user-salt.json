@@ -1,0 +1,11 @@
+{
+    "transaction_code": "NH500012",
+    "transaction_reference_code": "H01171219101511400",
+    "transaction_date": "20160106",
+    "transaction_time": "101511",
+    "posted_date": "20160106",
+    "response_result": "0",
+    "length_of_detail": 28,
+    "user_id": "23",
+    "user_salt": "15859850201712191013464662"
+}

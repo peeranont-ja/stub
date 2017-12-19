@@ -1,0 +1,13 @@
+{
+    "transaction_code": "NH600005",
+    "transaction_reference_code": "H01171219120854886",
+    "transaction_date": "20160106",
+    "transaction_time": "120854",
+    "posted_date": "20160106",
+    "response_result": "0",
+    "length_of_detail": 18,
+    "terminal_id": "R52J70WR1HA",
+    "branch_code": "5",
+    "user_id": "23",
+    "token": "****"
+}

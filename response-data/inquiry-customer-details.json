@@ -1,0 +1,21 @@
+{
+    "transaction_code": "NH500004",
+    "transaction_reference_code": "H01171219114307285",
+    "transaction_date": "20160106",
+    "transaction_time": "114307",
+    "posted_date": "20160106",
+    "response_result": "0",
+    "length_of_detail": 38,
+    "last_cif_number": "8",
+    "has_more_customer": false,
+    "customers": [
+      {
+        "cif_number": "8",
+        "title": "นาย",
+        "first_name": "โจ๊ก",
+        "last_name": "มายโม",
+        "citizen_id": "8976263184857",
+        "mobile_number": "0881112222"
+      }
+    ]
+  }
