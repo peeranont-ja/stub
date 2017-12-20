@@ -44,7 +44,7 @@
                   "response_result": "0",
                   "length_of_detail": 70,
                   "terminal_id": "<%post.6%>",
-                  "branch_code": "1",
+                  "branch_code": "<%post.9%>",
                   "user_id": "<%post.7%>",
                   "password": "<%post.8%>",
                   "token": "<%post.4%><%post.2%><%post.3%>",
