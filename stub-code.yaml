@@ -3,21 +3,55 @@
       request:
             method: POST
             url: /authentication/inquiry-user-salt
+            post: >
+                  {"transaction_code":"(.*)","transaction_reference_code":"(.*)","transaction_date":"(.*)","transaction_time":"(.*)","posted_date":"(.*)","user_id":"(.*)"}
+         
       response:
             status: 200
             headers:
                   content-type: application/json
-            file: /response-data/inquiry-user-salt.json
+            body: >
+                  {"user_id": "<%post.6%>",
+                  "transaction_code": "NH500012",
+                  "transaction_reference_code": "H01171220102607622",
+                  "transaction_date": "20160106",
+                  "transaction_time": "102607",
+                  "posted_date": "20160106",
+                  "response_result": "0",
+                  "length_of_detail": "28",
+                  "user_salt": "14221530201712201024424229"}
+
 -
       description: 'Authentication[verify-credential]'
       request:
             method: POST
             url: /authentication/verify-credential
+            headers:
+                  content-type: application/json
+            post: >
+                  {"transaction_code":"(.*)","transaction_reference_code":"(.*)","transaction_date":"(.*)","transaction_time":"(.*)","posted_date":"(.*)","terminal_id":"(.*)","user_id":"(.*)","password":"(.*)","branch_code":"(.*)"}
+
       response:
             status: 200
             headers:
                   content-type: application/json
-            file: /response-data/verify-credential.json
+            body: >
+                  {"transaction_code": "NH600004",
+                  "transaction_reference_code": "H01171220102203957",
+                  "transaction_date": "20160106",
+                  "transaction_time": "102203",
+                  "posted_date": "20160106",
+                  "response_result": "0",
+                  "length_of_detail": 70,
+                  "terminal_id": "R32H3006SIT",
+                  "branch_code": "1",
+                  "user_id": "<%post.7%>",
+                  "password": "<%post.8%>",
+                  "token": "****",
+                  "user_name": "datab",
+                  "branch_name": "สำนักพหลโยธิน"
+                  }
+
 -
       description: 'Deposit[validate-transaction]'
       request:
