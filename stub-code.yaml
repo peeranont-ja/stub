@@ -125,11 +125,11 @@
                   content-type: application/json
             body: >
                   {
-                  "transaction_code": "NH600005",
-                  "transaction_reference_code": "H01171219213059113",
-                  "transaction_date": "20160106",
-                  "transaction_time": "213059",
-                  "posted_date": "20160106",
+                  "transaction_code": "<%post.1%>",
+                  "transaction_reference_code": "<%post.2%>",
+                  "transaction_date": "<%post.3%>",
+                  "transaction_time": "<%post.4%>",
+                  "posted_date": "<%post.5%>",
                   "response_result": "0",
                   "length_of_detail": 18,
                   "terminal_id": "<%post.6%>",
