@@ -51,22 +51,6 @@
                   "user_name": "datab",
                   "branch_name": "สำนักพหลโยธิน"
                   }
-            # body: >
-            #       {"transaction_code": "NH600004",
-            #       "transaction_reference_code": "H01171220102203957",
-            #       "transaction_date": "20160106",
-            #       "transaction_time": "102203",
-            #       "posted_date": "20160106",
-            #       "response_result": "0",
-            #       "length_of_detail": 70,
-            #       "terminal_id": "R32H3006SIT",
-            #       "branch_code": "1",
-            #       "user_id": "<%post.7%>",
-            #       "password": "<%post.8%>",
-            #       "token": "****",
-            #       "user_name": "datab",
-            #       "branch_name": "สำนักพหลโยธิน"
-            #       }
 
 -
       description: 'Deposit[validate-transaction]'
