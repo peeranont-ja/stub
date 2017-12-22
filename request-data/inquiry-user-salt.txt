@@ -1,0 +1,8 @@
+{
+    "transaction_code": "(.*)",
+    "transaction_reference_code": "(.*)",
+    "transaction_date": "(.*)",
+    "transaction_time": "(.*)",
+    "posted_date": "(.*)",
+    "user_id": "(.*)"
+  }

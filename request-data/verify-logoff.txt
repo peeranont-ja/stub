@@ -1,0 +1,11 @@
+{
+    "transaction_code": "(.*)",
+    "transaction_reference_code": "(.*)",
+    "transaction_date": "(.*)",
+    "transaction_time": "(.*)",
+    "posted_date": "(.*)",
+    "terminal_id": "(.*)",
+    "user_id": "(.*)",
+    "branch_code": "(.*)",
+    "token": "(.*)"
+  }

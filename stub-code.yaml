@@ -3,9 +3,7 @@
       request:
             method: POST
             url: /authentication/inquiry-user-salt
-            post: >
-                  {"transaction_code":"(.*)","transaction_reference_code":"(.*)","transaction_date":"(.*)","transaction_time":"(.*)","posted_date":"(.*)","user_id":"(.*)"}
-         
+            file: request-data/inquiry-user-salt.txt
       response:
             status: 200
             headers:
@@ -28,9 +26,7 @@
             url: /authentication/verify-credential
             headers:
                   content-type: application/json
-            post: >
-                  {"transaction_code":"(.*)","transaction_reference_code":"(.*)","transaction_date":"(.*)","transaction_time":"(.*)","posted_date":"(.*)","terminal_id":"(.*)","user_id":"(.*)","password":"(.*)","branch_code":"(.*)"}
-
+            file: request-data/verify-credential.txt
       response:
             status: 200
             headers:
@@ -100,9 +96,7 @@
             url: /authentication/verify-logoff
             headers:
                   content-type: application/json
-            post: >
-                  {"transaction_code":"(.*)","transaction_reference_code":"(.*)","transaction_date":"(.*)","transaction_time":"(.*)","posted_date":"(.*)","terminal_id":"(.*)","user_id":"(.*)","branch_code":"(.*)","token":"(.*)"}
-
+            file: request-data/verify-logoff.txt
       response:
             status: 200
             headers:
