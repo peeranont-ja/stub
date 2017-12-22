@@ -132,20 +132,19 @@
             headers:
                   content-type: application/xml
             file: /response-data/ESB.xml
-
 -
-      description: SMS
+      description: Account[inquiry-deposit-account]
       request:
             method: POST
-            url: account/inquiry-deposit-account
+            url: /account/inquiry-deposit-account
             headers: 
                   content-type: application/json 
             post:  >
-                  {"transaction_code": "(.*)","transaction_reference_code": "(.*)","transaction_date": "(.*)","transaction_time": "(.*)","posted_date": "(.*)","account_number": "(.*)","passbook_number": "(.*)","terminal_id": "(.*)","branch_code": "(.*)","user_id": "(.*)"}
+                  {"transaction_code":"(.*)","transaction_reference_code":"(.*)","transaction_date":"(.*)","transaction_time":"(.*)","posted_date":"(.*)","account_number":"(.*)","passbook_number":"(.*)","method_type":(.*),"terminal_id":"(.*)","branch_code":"(.*)","user_id":"(.*)"}
       response:
             status: 200
             headers:
-                  content-type: application/xml
+                  content-type: application/json
             body: >
                   {
                   "transaction_code": "<%post.1%>",
@@ -168,4 +167,3 @@
                   "ledger_balance": 3051,
                   "available_balance": 3051
                   }
-
