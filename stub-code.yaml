@@ -132,3 +132,38 @@
             headers:
                   content-type: application/xml
             file: /response-data/ESB.xml
+-
+      description: Account[inquiry-deposit-account]
+      request:
+            method: POST
+            url: /account/inquiry-deposit-account
+            headers: 
+                  content-type: application/json 
+            post:  >
+                  {"transaction_code":"(.*)","transaction_reference_code":"(.*)","transaction_date":"(.*)","transaction_time":"(.*)","posted_date":"(.*)","account_number":"(.*)","passbook_number":"(.*)","method_type":(.*),"terminal_id":"(.*)","branch_code":"(.*)","user_id":"(.*)"}
+      response:
+            status: 200
+            headers:
+                  content-type: application/json
+            body: >
+                  {
+                  "transaction_code": "<%post.1%>",
+                  "transaction_reference_code": "<%post.2%>",
+                  "transaction_date": "<%post.3%>",
+                  "transaction_time": "<%post.4%>",
+                  "posted_date": "<%post.5%>",
+                  "response_result": "0",
+                  "length_of_detail": 82,
+                  "cif_number": "5",
+                  "mobile_number": "0898765432",
+                  "account_number": "<%post.6%>",
+                  "account_name": "กอล์ฟ มายโม And",
+                  "account_class": "D",
+                  "account_group": "SAV",
+                  "account_type": 2001,
+                  "account_type_description": "บัญชีเงินฝากเผื่อเรียก",
+                  "account_status": 0,
+                  "account_status_description": "Active",
+                  "ledger_balance": 3051,
+                  "available_balance": 3051
+                  }
