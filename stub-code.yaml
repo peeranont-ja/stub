@@ -69,16 +69,6 @@
             url: /deposit/process-transaction
       response:
             -
-                  status: 400
-                  headers:
-                        content-type: application/json
-                  file: /response-data/error-process-transaction.json
-            -
-                  status: 200
-                  headers:
-                        content-type: application/json
-                  file: /response-data/process-transaction.json
-            -
                   status: 200
                   headers:
                         content-type: application/json
